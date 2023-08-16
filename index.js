@@ -2,6 +2,7 @@
 const controlPedal = document.querySelector(".pedal")
 const calcador = document.querySelector(".calcador")
 const img = document.querySelector("img")
+const video = document.querySelector("video")
 const toggle = document.querySelector(".toggle")
 const fsm = document.querySelector(".fsm")
 
@@ -28,8 +29,8 @@ controlPedal.addEventListener("mousedown", () => {
         // ap
         state = "C"
         fsm.src = "img/fsm_C.jpeg";
-        img.src = "img/sewing.gif";
-        startTimer()
+        img.classList.add("hidden");
+        video.classList.remove("hidden");
     }
 })
 
@@ -38,6 +39,8 @@ controlPedal.addEventListener("mouseup", () => {
         // pp
         state = "CP"
         fsm.src = "img/fsm_CP.jpeg";
+        img.classList.remove("hidden");
+        video.classList.add("hidden");
         img.src = "img/done.jpg";
     }
 })

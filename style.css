@@ -1,0 +1,17 @@
+.calcador{
+    box-shadow: 0 8px 0 #960e30
+}
+
+.calcador:active{
+    box-shadow: none;
+    transform: translateY(8px);
+}
+
+.pedal{
+    box-shadow: 0 8px 0 #523d35
+}
+
+.pedal:active{
+    box-shadow: none;
+    transform: translateY(8px);
+}

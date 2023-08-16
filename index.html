@@ -6,18 +6,20 @@
     <title>Sewing Machine</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/e7ebc2fc39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="h-full">
     <div class="bg-white flex flex-row justify-center items-center h-full gap-24">
         <img src="img/off.jpg" alt="" class="h-[450px]">
+        <video src="img/sewing.mp4" autoplay loop muted class="h-[450px] hidden"></video>
 
-        <button class="calcador h-16 w-16 bg-rose-700 opacity-90 shadow-zinc-500 shadow-md active:shadow-none active:opacity-100 mt-52 fixed right-[23rem] bottom-32"></button>
-        <span class="font-bold text-lg fixed right-[16.5rem] bottom-36">Calcador</span>
+        <button class="calcador h-12 w-20 bg-rose-700 mt-52 fixed right-[23rem] bottom-32"></button>
+        <span class="text-rose-700 font-bold text-xl fixed right-[16rem] bottom-[8.5rem]">Calcador</span>
 
-        <button class="pedal h-24 w-16 bg-zinc-800 opacity-90 shadow-zinc-500 shadow-md active:shadow-none active:opacity-100 mt-52 fixed right-[23rem]"></button>
-        <span class="font-bold text-lg fixed right-[18rem] bottom-64">Pedal</span>
+        <button class="pedal h-16 w-20 bg-[#7E5E52] mt-52 fixed right-[23rem]"></button>
+        <span class="text-[#7E5E52] font-bold text-xl fixed right-[18rem] bottom-64">Pedal</span>
 
-        <img src="img/toggle-off-solid.svg" alt="" class="h-12 fixed right-[23.5rem] toggle">
+        <img src="img/toggle-off-solid.svg" alt="" class="h-12 fixed right-[23.8rem] toggle">
 
         <img src="img/fsm_D.jpeg" alt="" class="fixed left-16 bottom-36 h-1/2 fsm">
     </div>
